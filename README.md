@@ -13,6 +13,23 @@ This repository contains a Hyperledger fabric blokchain setup from scratch.
 - Note : please verify your PWD is Hyperledger-Fabric
 
 
+export PATH=${PWD}/bin:$PATH
+ cd org1
+./1_enrollOrg1AdminAndUsers.sh
+./2_generateMSPOrg1.sh
+
+ cd ../org2
+./1_enrollOrg2AdminAndUsers.sh
+./2_generateMSPOrg2.sh
+ cd ../orderer
+./1_enrollAdminAndMSP.sh
+./2_artifact.sh
+cd ../org1
+./3_createChannel.sh
+cd ../org2
+./3_joinChannel.sh
+
+
 #### Setup 
 - Follow this [Article](https://cmjagtap.medium.com/introduction-to-hyperledger-fabric-1ce0a1d67494) for basic understanding of hyperledger fabric.
 - Follow this [Article](https://cmjagtap.medium.com/hyperledger-fabric-blockchain-setup-from-scratch-21890e26aac7) to setup test network from scratch.
