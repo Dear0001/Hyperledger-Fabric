@@ -12,22 +12,21 @@ This repository contains a Hyperledger fabric blokchain setup from scratch.
 - export PATH=${PWD}/bin:$PATH 
 - Note : please verify your PWD is Hyperledger-Fabric
 
+- export PATH=${PWD}/bin:$PATH
+-  cd org1
+- ./1_enrollOrg1AdminAndUsers.sh
+- ./2_generateMSPOrg1.sh
 
-export PATH=${PWD}/bin:$PATH
- cd org1
-./1_enrollOrg1AdminAndUsers.sh
-./2_generateMSPOrg1.sh
-
- cd ../org2
-./1_enrollOrg2AdminAndUsers.sh
-./2_generateMSPOrg2.sh
- cd ../orderer
-./1_enrollAdminAndMSP.sh
-./2_artifact.sh
-cd ../org1
-./3_createChannel.sh
-cd ../org2
-./3_joinChannel.sh
+-  cd ../org2
+- ./1_enrollOrg2AdminAndUsers.sh
+- ./2_generateMSPOrg2.sh
+-  cd ../orderer
+- ./1_enrollAdminAndMSP.sh
+- ./2_artifact.sh
+- cd ../org1
+- ./3_createChannel.sh
+- cd ../org2
+- ./3_joinChannel.sh
 
 
 #### Setup 
