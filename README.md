@@ -2,7 +2,7 @@
 
 #### AUTHOR:
 
-- [Chandramohan Jagtap](https://github.com/cmjagtap "Chandramohan's github profile")
+- [Dalen Phea](https://github.com/Dear0001 "Dalen's github profile")
 
 #### DESCRIPTION:
 This repository contains a Hyperledger fabric blokchain setup from scratch.
